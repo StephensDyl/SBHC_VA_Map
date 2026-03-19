@@ -1,0 +1,30 @@
+﻿Code,Description
+10,General medical and surgical
+11,"Hospital unit of an institution (prison hospital, college infirmary, etc.)"
+12,Hospital unit within a facility for persons with intellectual disabilities
+13,Surgical
+18,Rural Emergency Hospital
+22,Psychiatric
+33,Tuberculosis and other respiratory diseases
+41,Cancer
+42,Heart
+44,Obstetrics and gynecology
+45,"Eye, ear, nose and throat"
+46,Rehabilitation
+47,Orthopedic
+48,Chronic disease
+49,Other specialty treatment
+50,Children’s general medical and surgical
+51,Children’s hospital unit of an institution
+52,Children's psychiatric
+53,Children’s tuberculosis and other respiratory diseases
+55,"Children’s eye, ear, nose and throat"
+56,Children’s rehabilitation
+57,Children’s orthopedic
+58,Children’s chronic disease
+59,Children’s other specialty
+62,Intellectual disabilities
+80,Acute long-term care hospital
+82,Substance use disorder
+90,Children’s acute long-term Care
+91,Children’s cancer

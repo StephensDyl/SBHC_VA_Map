@@ -93,7 +93,7 @@ server <- function(input, output, session) {
         label = ~SCH_NAME,
         popup = ~paste0(
           "<b>School Name:</b> ", SCH_NAME, "<br>",
-          "<b>Travel Time:</b> ", round(Total_TravelTime, 2), " min<br>",
+          "<b>Travel Time:</b> ", round(Total_TravelTime, 1), " min<br>",
           "<b>Travel Distance:</b> ", round(Total_Kilometers, 2), " km<br>",
           "<b>School Level:</b> ", SCHOOL_LEVEL
         )
@@ -107,7 +107,7 @@ server <- function(input, output, session) {
         popup = ~paste0(
           "<b>School Within 1000ft of SBHC</b><br>",
           "<b>School Name:</b> ", SCH_NAME, "<br>",
-          "<b>Travel Time:</b> ", round(Total_TravelTime, 2), " min<br>",
+          "<b>Travel Time:</b> ", round(Total_TravelTime, 1), " min<br>",
           "<b>Travel Distance:</b> ", round(Total_Kilometers, 2), " km<br>",
           "<b>School Level:</b> ", SCHOOL_LEVEL
         )
@@ -165,9 +165,12 @@ server <- function(input, output, session) {
 
     popup_html <- paste0(
       "<b>", va_counties_sf$county, "</b><br>",
-      "<b>Total Schools:</b> ",       va_counties_sf$total_schools, "<br>",
-      "<b>Schools Near an SBHC:</b> ", va_counties_sf$schools_w_sbhc, "<br>",
-      "<b>", label, ":</b> ",         round(vals, 2)
+      "<b>Total Schools:</b> ",                    va_counties_sf$total_schools, "<br>",
+      "<b>Schools Near an SBHC:</b> ",             va_counties_sf$schools_w_sbhc, "<br>",
+      "<b>Avg Travel Time – General Hospital:</b> ",            round(va_counties_sf$avg_tt_general,           1), " min<br>",
+      "<b>Avg Travel Time – Children's General Hospital:</b> ", round(va_counties_sf$avg_tt_childrens_general, 1), " min<br>",
+      "<b>Avg Travel Time – Psychiatric Hospital:</b> ",        round(va_counties_sf$avg_tt_psychiatric,       1), " min<br>",
+      "<b>", label, ":</b> ",                      round(vals, 2)
     )
 
     leafletProxy("map") |>

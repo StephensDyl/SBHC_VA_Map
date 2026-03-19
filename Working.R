@@ -60,7 +60,7 @@ reactable(
 
 # Run this block once to generate RDS files needed by app.R
 # (saves the geocoded + processed objects so the app doesn't re-geocode on startup)
-if (FALSE) {
+if (F) {
   saveRDS(df_normed,      "df_normed.rds")
   saveRDS(schools_final,  "schools_final.rds")
   saveRDS(sbhc_map,       "sbhc_map.rds")
@@ -195,13 +195,26 @@ VACountyData$fipscode <- as.character(VACountyData$fipscode)
 va_counties_sf <- counties(state = "VA", cb = TRUE, year = 2022) |>
   left_join(VACountyData, by = c("GEOID" = "fipscode"))
 
-# Per-county school counts from schools_final
+# Per-county school counts and average travel times from schools_final + va_enriched
 county_school_counts <- schools_final |>
   st_drop_geometry() |>
+  mutate(NCESSCH = as.character(NCESSCH)) |>
+  left_join(
+    va_enriched |>
+      mutate(`Unique School ID` = str_remove(as.character(`Unique School ID`), "\\.00$")) |>
+      select(`Unique School ID`,
+             Total_TravelTime_SERV10,
+             Total_TravelTime_SERV22,
+             Total_TravelTime_SERV50),
+    by = c("NCESSCH" = "Unique School ID")
+  ) |>
   group_by(CNTY) |>
   summarise(
-    total_schools   = n(),
-    schools_w_sbhc  = sum(has_sbhc_nearby, na.rm = TRUE),
+    total_schools            = n(),
+    schools_w_sbhc           = sum(has_sbhc_nearby, na.rm = TRUE),
+    avg_tt_general           = mean(Total_TravelTime_SERV10, na.rm = TRUE),
+    avg_tt_psychiatric       = mean(Total_TravelTime_SERV22, na.rm = TRUE),
+    avg_tt_childrens_general = mean(Total_TravelTime_SERV50, na.rm = TRUE),
     .groups = "drop"
   )
 
@@ -234,7 +247,10 @@ leaflet() |>
     popup = ~paste0(
       "<b>", county, "</b><br>",
       "<b>Total Schools:</b> ", total_schools, "<br>",
-      "<b>Schools Near an SBHC:</b> ", schools_w_sbhc
+      "<b>Schools Near an SBHC:</b> ", schools_w_sbhc, "<br>",
+      "<b>Avg Travel Time \u2013 General Hospital:</b> ",             round(avg_tt_general,           1), " min<br>",
+      "<b>Avg Travel Time \u2013 Children's General Hospital:</b> ", round(avg_tt_childrens_general, 1), " min<br>",
+      "<b>Avg Travel Time \u2013 Psychiatric Hospital:</b> ",        round(avg_tt_psychiatric,       1), " min"
     ),
     highlightOptions = highlightOptions(
       color = "#333333",
@@ -249,7 +265,7 @@ leaflet() |>
     title = "Children in Poverty (%)",
     position = "bottomright"
   ) |>
-
+  
   # LAYER 1: All Schools (Neutral base)
   addCircleMarkers(
     data = schools_final,
@@ -267,11 +283,11 @@ leaflet() |>
   # LAYER 2: Highlighted Schools (Those near an SBHC)
   addCircleMarkers(
     data = schools_final |> filter(has_sbhc_nearby == TRUE),
-    group = "Schools with SBHC (1000ft)",
+    group = "Schools Near SBHC (1000ft)",
     radius = 8, color = "red", weight = 3, fillOpacity = 0.2,
     label = ~SCH_NAME,
     popup = ~paste0(
-      "<b>School Within 1000ft of SBHC</b>",
+      "<b>School Within 1000ft of SBHC</b><br>",
       "<b>School Name:</b> ", SCH_NAME, "<br>",
       "<b>Travel Time:</b> ", round(Total_TravelTime, 2), " min<br>",
       "<b>Travel Distance:</b> ", round(Total_Kilometers, 2), " km<br>",
@@ -287,8 +303,8 @@ leaflet() |>
     label = ~paste0(Name),
     popup = ~paste0(
       "<b>SBHC Name:</b> ", Name, "<br>",
-      "<b>Provider:</b> ", Operated.By, " min<br>",
-      "<b>Services Offered:</b> ", School.Based.Health.Services, " km<br>",
+      "<b>Provider:</b> ", Operated.By, "<br>",
+      "<b>Services Offered:</b> ", School.Based.Health.Services, "<br>",
       "<b>Delivery Model:</b> ", Delivery.Models
     )
   ) |># LAYER 3: The SBHCs (Unique Symbol)
@@ -299,7 +315,7 @@ leaflet() |>
     label = ~paste0(Site.Name),
     popup = ~paste0(
       "<b>FQHC Name:</b> ", Site.Name, "<br>",
-      "<b>Provider:</b> ", Health.Center.Name,
+      "<b>Provider:</b> ", Health.Center.Name, "<br>",
       "<b>Service Site:</b> ", Health.Center.Service.Delivery.Site.Location.Setting.Description
     )
   ) |>
@@ -309,4 +325,40 @@ leaflet() |>
     overlayGroups = c("Counties", "All Schools", "Schools Near SBHC (1000ft)", "Health Centers (SBHC)", "Health Centers (FQHC)"),
     options = layersControlOptions(collapsed = FALSE)
   )
+
+
+
+
+
+library(tidyverse)
+
+# Load inputs
+start <- read_csv("C:/SBHC/March 2026/March2026SBHC/VA_Start_Merge.csv")
+nces  <- read_csv("C:/SBHC/March 2026/March2026SBHC/NCES_2223.csv")
+
+# For each school (NCESSH) + SERV type, keep the lowest-ranked destination
+# then pivot wide so each SERV gets its own TravelTime and Kilometers columns
+best_dest <- start |>
+  separate(Name, into = c("NCESSH", "SERV"), sep = " - ", convert = TRUE) |>
+  group_by(NCESSH, SERV) |>
+  slice_min(DestinationRank, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  mutate(NCESSH = str_pad(as.character(NCESSH), width = 12, pad = "0")) |>
+  select(NCESSH, SERV, Total_TravelTime, Total_Kilometers) |>
+  pivot_wider(
+    names_from  = SERV,
+    values_from = c(Total_TravelTime, Total_Kilometers),
+    names_glue  = "{.value}_SERV{SERV}"
+  )
+
+# Join travel columns onto NCES and filter to Virginia
+va_enriched <- nces |>
+  mutate(NCESSH_key = str_remove(`Unique School ID`, "\\.00$")) |>
+  left_join(best_dest, by = c("NCESSH_key" = "NCESSH")) |>
+  select(-NCESSH_key) |>
+  filter(`Postal state abbreviation code` == "VA")
+
+va_enriched %>% 
+  write.csv("va_enriched.csv")
+
 
