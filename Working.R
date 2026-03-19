@@ -72,8 +72,6 @@ read.csv("SBHC VA.csv")->SBHC
 
 read.csv("TTbyNCESID.csv")->TravelTimes
 
-read.csv("AHA2023.csv")->hospitals
-
 read.csv("FQHC2026.csv")->FQHC 
 
 read.csv("CountyHealthRankingsDictionary.csv")->CHRdataDict
