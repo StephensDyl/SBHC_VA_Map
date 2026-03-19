@@ -1,0 +1,931 @@
+﻿Variable Name,Measure,Description
+statecode,State FIPS Code, 
+countycode,County FIPS Code, 
+fipscode,5-digit FIPS Code, 
+state,State Abbreviation, 
+county,Name, 
+year,Release Year, 
+county_clustered,County Clustered (Yes=1/No=0), 
+v001_rawvalue,Premature Death raw value,"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_numerator,Premature Death numerator, 
+v001_denominator,Premature Death denominator, 
+v001_cilow,Premature Death CI low, 
+v001_cihigh,Premature Death CI high, 
+v001_flag,"Premature Death flag (0 = No
+Flag/1=Unreliable/2=Suppressed)", 
+v001_race_aian,Premature Death (AIAN),"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_race_aian_cilow,Premature Death CI low (AIAN), 
+v001_race_aian_cihigh,Premature Death CI high (AIAN), 
+v001_race_aian_flag,"Premature Death flag (AIAN) (. = No
+Flag/1=Unreliable/2=Suppressed)", 
+v001_race_asian,Premature Death (Asian),"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_race_asian_cilow,Premature Death CI low (Asian), 
+v001_race_asian_cihigh,Premature Death CI high (Asian), 
+v001_race_asian_flag,"Premature Death flag (Asian) (. = No
+Flag/1=Unreliable/2=Suppressed)", 
+v001_race_black,Premature Death (Black),"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_race_black_cilow,Premature Death CI low (Black), 
+v001_race_black_cihigh,Premature Death CI high (Black), 
+v001_race_black_flag,"Premature Death flag (Black) (. = No
+Flag/1=Unreliable/2=Suppressed)", 
+v001_race_hispanic,Premature Death (Hispanic),"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_race_hispanic_cilow,Premature Death CI low (Hispanic), 
+v001_race_hispanic_cihigh,Premature Death CI high (Hispanic), 
+v001_race_hispanic_flag,"Premature Death flag (Hispanic) (. =
+No Flag/1=Unreliable/2=Suppressed)", 
+v001_race_white,Premature Death (White),"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_race_white_cilow,Premature Death CI low (White), 
+v001_race_white_cihigh,Premature Death CI high (White), 
+v001_race_white_flag,"Premature Death flag (White) (. = No
+Flag/1=Unreliable/2=Suppressed)", 
+v001_race_nhopi,Premature Death (NHOPI),"Years of potential life lost before age 75 per 100,000 population (age-adjusted)."
+v001_race_nhopi_cilow,Premature Death CI low (NHOPI), 
+v001_race_nhopi_cihigh,Premature Death CI high (NHOPI), 
+v001_race_nhopi_flag,"Premature Death flag (NHOPI) (. = No
+Flag/1=Unreliable/2=Suppressed)", 
+v001_race_tom_flag,"Premature Death flag (Two or more
+races) (. = No
+Flag/1=Unreliable/2=Suppressed)", 
+v002_rawvalue,Poor or Fair Health raw value,Percentage of adults reporting fair or poor health (age-adjusted).
+v002_numerator,Poor or Fair Health numerator, 
+v002_denominator,Poor or Fair Health denominator, 
+v002_cilow,Poor or Fair Health CI low, 
+v002_cihigh,Poor or Fair Health CI high, 
+v036_rawvalue,Poor Physical Health Days raw value,Average number of physically unhealthy days reported in past 30 days (age-adjusted).
+v036_numerator,Poor Physical Health Days numerator, 
+v036_denominator,"Poor Physical Health Days
+denominator", 
+v036_cilow,Poor Physical Health Days CI low, 
+v036_cihigh,Poor Physical Health Days CI high, 
+v042_rawvalue,Poor Mental Health Days raw value,Average number of mentally unhealthy days reported in past 30 days (age-adjusted).
+v042_numerator,Poor Mental Health Days numerator, 
+v042_denominator,Poor Mental Health Days denominator, 
+v042_cilow,Poor Mental Health Days CI low, 
+v042_cihigh,Poor Mental Health Days CI high, 
+v037_rawvalue,Low Birthweight raw value,"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_numerator,Low Birthweight numerator, 
+v037_denominator,Low Birthweight denominator, 
+v037_cilow,Low Birthweight CI low, 
+v037_cihigh,Low Birthweight CI high, 
+v037_flag,"LBW unreliable indicator (Unreliable =
+Numerator < 20 or relative standard
+error > 20%)", 
+v037_race_aian,Low Birthweight (AIAN),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_aian_cilow,Low Birthweight CI low (AIAN), 
+v037_race_aian_cihigh,Low Birthweight CI high (AIAN), 
+v037_race_asian,Low Birthweight (Asian),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_asian_cilow,Low Birthweight CI low (Asian), 
+v037_race_asian_cihigh,Low Birthweight CI high (Asian), 
+v037_race_black,Low Birthweight (Black),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_black_cilow,Low Birthweight CI low (Black), 
+v037_race_black_cihigh,Low Birthweight CI high (Black), 
+v037_race_hispanic,Low Birthweight (Hispanic),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_hispanic_cilow,Low Birthweight CI low (Hispanic), 
+v037_race_hispanic_cihigh,Low Birthweight CI high (Hispanic), 
+v037_race_white,Low Birthweight (White),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_white_cilow,Low Birthweight CI low (White), 
+v037_race_white_cihigh,Low Birthweight CI high (White), 
+v037_race_nhopi,Low Birthweight (NHOPI),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_nhopi_cilow,Low Birthweight CI low (NHOPI), 
+v037_race_nhopi_cihigh,Low Birthweight CI high (NHOPI), 
+v037_race_tom,Low Birthweight (Two or more races),"Percentage of live births with low birthweight (< 2,500 grams)."
+v037_race_tom_cilow,"Low Birthweight CI low (Two or more
+races)", 
+v037_race_tom_cihigh,"Low Birthweight CI high (Two or more
+races)", 
+v009_rawvalue,Adult Smoking raw value,Percentage of adults who are current smokers (age-adjusted).
+v009_numerator,Adult Smoking numerator, 
+v009_denominator,Adult Smoking denominator, 
+v009_cilow,Adult Smoking CI low, 
+v009_cihigh,Adult Smoking CI high, 
+v011_rawvalue,Adult Obesity raw value,"Percentage of the adult population (age 18 and older) that reports a body mass index (BMI) greater than or
+equal to 30 kg/m2 (age-adjusted)."
+v011_numerator,Adult Obesity numerator, 
+v011_denominator,Adult Obesity denominator, 
+v011_cilow,Adult Obesity CI low, 
+v011_cihigh,Adult Obesity CI high, 
+v133_rawvalue,Food Environment Index raw value,"Index of factors that contribute to a healthy food environment, from 0 (worst) to 10 (best)."
+v133_numerator,Food Environment Index numerator, 
+v133_denominator,Food Environment Index denominator, 
+v133_cilow,Food Environment Index CI low, 
+v133_cihigh,Food Environment Index CI high, 
+v070_rawvalue,Physical Inactivity raw value,Percentage of adults age 18 and over reporting no leisure-time physical activity (age-adjusted).
+v070_numerator,Physical Inactivity numerator, 
+v070_denominator,Physical Inactivity denominator, 
+v070_cilow,Physical Inactivity CI low, 
+v070_cihigh,Physical Inactivity CI high, 
+v132_rawvalue,"Access to Exercise Opportunities raw
+value",Percentage of population with adequate access to locations for physical activity.
+v132_numerator,"Access to Exercise Opportunities
+numerator", 
+v132_denominator,"Access to Exercise Opportunities
+denominator", 
+v132_cilow,"Access to Exercise Opportunities CI
+low", 
+v132_cihigh,"Access to Exercise Opportunities CI
+high", 
+v049_rawvalue,Excessive Drinking raw value,Percentage of adults reporting binge or heavy drinking (age-adjusted).
+v049_numerator,Excessive Drinking numerator, 
+v049_denominator,Excessive Drinking denominator, 
+v049_cilow,Excessive Drinking CI low, 
+v049_cihigh,Excessive Drinking CI high, 
+v134_rawvalue,"Alcohol-Impaired Driving Deaths raw
+value",Percentage of driving deaths with alcohol involvement.
+v134_numerator,"Alcohol-Impaired Driving Deaths
+numerator", 
+v134_denominator,"Alcohol-Impaired Driving Deaths
+denominator", 
+v134_cilow,Alcohol-Impaired Driving Deaths CI low, 
+v134_cihigh,"Alcohol-Impaired Driving Deaths CI
+high", 
+v045_rawvalue,"Sexually Transmitted Infections raw
+value","Number of newly diagnosed chlamydia cases per 100,000 population."
+v045_numerator,"Sexually Transmitted Infections
+numerator", 
+v045_denominator,"Sexually Transmitted Infections
+denominator", 
+v045_cilow,Sexually Transmitted Infections CI low, 
+v045_cihigh,Sexually Transmitted Infections CI high, 
+v014_rawvalue,Teen Births raw value,"Number of births per 1,000 female population ages 15-19."
+v014_numerator,Teen Births numerator, 
+v014_denominator,Teen Births denominator, 
+v014_cilow,Teen Births CI low, 
+v014_cihigh,Teen Births CI high, 
+v014_race_aian,Teen Births (AIAN),"Number of births per 1,000 female population ages 15-19."
+v014_race_aian_cilow,Teen Births CI low (AIAN), 
+v014_race_aian_cihigh,Teen Births CI high (AIAN), 
+v014_race_asian,Teen Births (Asian),"Number of births per 1,000 female population ages 15-19."
+v014_race_asian_cilow,Teen Births CI low (Asian), 
+v014_race_asian_cihigh,Teen Births CI high (Asian), 
+v014_race_black,Teen Births (Black),"Number of births per 1,000 female population ages 15-19."
+v014_race_black_cilow,Teen Births CI low (Black), 
+v014_race_black_cihigh,Teen Births CI high (Black), 
+v014_race_hispanic,Teen Births (Hispanic),"Number of births per 1,000 female population ages 15-19."
+v014_race_hispanic_cilow,Teen Births CI low (Hispanic), 
+v014_race_hispanic_cihigh,Teen Births CI high (Hispanic), 
+v014_race_white,Teen Births (White),"Number of births per 1,000 female population ages 15-19."
+v014_race_white_cilow,Teen Births CI low (White), 
+v014_race_white_cihigh,Teen Births CI high (White), 
+v014_race_nhopi,Teen Births (NHOPI),"Number of births per 1,000 female population ages 15-19."
+v014_race_nhopi_cilow,Teen Births CI low (NHOPI), 
+v014_race_nhopi_cihigh,Teen Births CI high (NHOPI), 
+v014_race_tom,Teen Births (Two or more races),"Number of births per 1,000 female population ages 15-19."
+v014_race_tom_cilow,Teen Births CI low (Two or more races), 
+v014_race_tom_cihigh,"Teen Births CI high (Two or more
+races)", 
+v085_rawvalue,Uninsured raw value,Percentage of population under age 65 without health insurance.
+v085_numerator,Uninsured numerator, 
+v085_denominator,Uninsured denominator, 
+v085_cilow,Uninsured CI low, 
+v085_cihigh,Uninsured CI high, 
+v004_rawvalue,Primary Care Physicians raw value,"Number of primary care physicians per 100,000 population"
+v004_numerator,Primary Care Physicians numerator, 
+v004_denominator,Primary Care Physicians denominator, 
+v004_cilow,Primary Care Physicians CI low, 
+v004_cihigh,Primary Care Physicians CI high, 
+v004_other_data_1,"Ratio of population to primary care
+physicians.",Ratio of population to primary care physicians.
+v088_rawvalue,Dentists raw value,"Number of dentists per 100,000 population"
+v088_numerator,Dentists numerator, 
+v088_denominator,Dentists denominator, 
+v088_cilow,Dentists CI low, 
+v088_cihigh,Dentists CI high, 
+v088_other_data_1,Ratio of population to dentists.,Ratio of population to dentists.
+v062_rawvalue,Mental Health Providers raw value,"Number of mental health care providers per 100,000 population"
+v062_numerator,Mental Health Providers numerator, 
+v062_denominator,Mental Health Providers denominator, 
+v062_cilow,Mental Health Providers CI low, 
+v062_cihigh,Mental Health Providers CI high, 
+v062_other_data_1,"Ratio of population to mental health
+providers.",Ratio of population to mental health providers.
+v005_rawvalue,Preventable Hospital Stays raw value,"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees."
+v005_numerator,Preventable Hospital Stays numerator, 
+v005_denominator,"Preventable Hospital Stays
+denominator", 
+v005_cilow,Preventable Hospital Stays CI low, 
+v005_cihigh,Preventable Hospital Stays CI high, 
+v005_race_aian,Preventable Hospital Stays (AIAN),"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees."
+v005_race_asian,"Preventable Hospital Stays
+(Asian/Pacific Islander)","Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees."
+v005_race_black,Preventable Hospital Stays (Black),"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees."
+v005_race_hispanic,Preventable Hospital Stays (Hispanic),"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees."
+v005_race_white,Preventable Hospital Stays (White),"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees."
+v050_rawvalue,Mammography Screening raw value,Percentage of female Medicare enrollees ages 65-74 that received an annual mammography screening.
+v050_numerator,Mammography Screening numerator, 
+v050_denominator,Mammography Screening denominator, 
+v050_cilow,Mammography Screening CI low, 
+v050_cihigh,Mammography Screening CI high, 
+v050_race_aian,Mammography Screening (AIAN),Percentage of female Medicare enrollees ages 65-74 that received an annual mammography screening.
+v050_race_asian,"Mammography Screening
+(Asian/Pacific Islander)",Percentage of female Medicare enrollees ages 65-74 that received an annual mammography screening.
+v050_race_black,Mammography Screening (Black),Percentage of female Medicare enrollees ages 65-74 that received an annual mammography screening.
+v050_race_hispanic,Mammography Screening (Hispanic),Percentage of female Medicare enrollees ages 65-74 that received an annual mammography screening.
+v050_race_white,Mammography Screening (White),Percentage of female Medicare enrollees ages 65-74 that received an annual mammography screening.
+v155_rawvalue,Flu Vaccinations raw value,Percentage of fee-for-service (FFS) Medicare enrollees that had an annual flu vaccination.
+v155_numerator,Flu Vaccinations numerator, 
+v155_denominator,Flu Vaccinations denominator, 
+v155_cilow,Flu Vaccinations CI low, 
+v155_cihigh,Flu Vaccinations CI high, 
+v155_race_aian,Flu Vaccinations (AIAN),Percentage of fee-for-service (FFS) Medicare enrollees that had an annual flu vaccination.
+v155_race_asian,"Flu Vaccinations (Asian/Pacific
+Islander)",Percentage of fee-for-service (FFS) Medicare enrollees that had an annual flu vaccination.
+v155_race_black,Flu Vaccinations (Black),Percentage of fee-for-service (FFS) Medicare enrollees that had an annual flu vaccination.
+v155_race_hispanic,Flu Vaccinations (Hispanic),Percentage of fee-for-service (FFS) Medicare enrollees that had an annual flu vaccination.
+v155_race_white,Flu Vaccinations (White),Percentage of fee-for-service (FFS) Medicare enrollees that had an annual flu vaccination.
+v168_rawvalue,High School Completion raw value,Percentage of adults ages 25 and over with a high school diploma or equivalent.
+v168_numerator,High School Completion numerator, 
+v168_denominator,High School Completion denominator, 
+v168_cilow,High School Completion CI low, 
+v168_cihigh,High School Completion CI high, 
+v069_rawvalue,Some College raw value,Percentage of adults ages 25-44 with some post-secondary education.
+v069_numerator,Some College numerator, 
+v069_denominator,Some College denominator, 
+v069_cilow,Some College CI low, 
+v069_cihigh,Some College CI high, 
+v023_rawvalue,Unemployment raw value,Percentage of population ages 16 and older unemployed but seeking work.
+v023_numerator,Unemployment numerator, 
+v023_denominator,Unemployment denominator, 
+v023_cilow,Unemployment CI low, 
+v023_cihigh,Unemployment CI high, 
+v024_rawvalue,Children in Poverty raw value,Percentage of people under age 18 in poverty.
+v024_numerator,Children in Poverty numerator, 
+v024_denominator,Children in Poverty denominator, 
+v024_cilow,Children in Poverty CI low, 
+v024_cihigh,Children in Poverty CI high, 
+v024_race_aian,Children in Poverty (AIAN),Percentage of people under age 18 in poverty.
+v024_race_aian_cilow,Children in Poverty CI low (AIAN), 
+v024_race_aian_cihigh,Children in Poverty CI high (AIAN), 
+v024_race_asian,"Children in Poverty (Asian/Pacific
+Islander)",Percentage of people under age 18 in poverty.
+v024_race_asian_cilow,"Children in Poverty CI low
+(Asian/Pacific Islander)", 
+v024_race_asian_cihigh,"Children in Poverty CI high
+(Asian/Pacific Islander)", 
+v024_race_black,Children in Poverty (Black),Percentage of people under age 18 in poverty.
+v024_race_black_cilow,Children in Poverty CI low (Black), 
+v024_race_black_cihigh,Children in Poverty CI high (Black), 
+v024_race_hispanic,Children in Poverty (Hispanic),Percentage of people under age 18 in poverty.
+v024_race_hispanic_cilow,Children in Poverty CI low (Hispanic), 
+v024_race_hispanic_cihigh,Children in Poverty CI high (Hispanic), 
+v024_race_white,Children in Poverty (White),Percentage of people under age 18 in poverty.
+v024_race_white_cilow,Children in Poverty CI low (White), 
+v024_race_white_cihigh,Children in Poverty CI high (White), 
+v044_rawvalue,Income Inequality raw value,Ratio of household income at the 80th percentile to income at the 20th percentile.
+v044_numerator,Income Inequality numerator, 
+v044_denominator,Income Inequality denominator, 
+v044_cilow,Income Inequality CI low, 
+v044_cihigh,Income Inequality CI high, 
+v082_rawvalue,"Children in Single-Parent Households
+raw value",Percentage of children that live in a household headed by a single parent.
+v082_numerator,"Children in Single-Parent Households
+numerator", 
+v082_denominator,"Children in Single-Parent Households
+denominator", 
+v082_cilow,"Children in Single-Parent Households
+CI low", 
+v082_cihigh,"Children in Single-Parent Households
+CI high", 
+v140_rawvalue,Social Associations raw value,"Number of membership associations per 10,000 population."
+v140_numerator,Social Associations numerator, 
+v140_denominator,Social Associations denominator, 
+v140_cilow,Social Associations CI low, 
+v140_cihigh,Social Associations CI high, 
+v135_rawvalue,Injury Deaths raw value,"Number of deaths due to injury per 100,000 population."
+v135_numerator,Injury Deaths numerator, 
+v135_denominator,Injury Deaths denominator, 
+v135_cilow,Injury Deaths CI low, 
+v135_cihigh,Injury Deaths CI high, 
+v135_race_aian,Injury Deaths (AIAN),"Number of deaths due to injury per 100,000 population."
+v135_race_aian_cilow,Injury Deaths CI low (AIAN), 
+v135_race_aian_cihigh,Injury Deaths CI high (AIAN), 
+v135_race_asian,Injury Deaths (Asian),"Number of deaths due to injury per 100,000 population."
+v135_race_asian_cilow,Injury Deaths CI low (Asian), 
+v135_race_asian_cihigh,Injury Deaths CI high (Asian), 
+v135_race_black,Injury Deaths (Black),"Number of deaths due to injury per 100,000 population."
+v135_race_black_cilow,Injury Deaths CI low (Black), 
+v135_race_black_cihigh,Injury Deaths CI high (Black), 
+v135_race_hispanic,Injury Deaths (Hispanic),"Number of deaths due to injury per 100,000 population."
+v135_race_hispanic_cilow,Injury Deaths CI low (Hispanic), 
+v135_race_hispanic_cihigh,Injury Deaths CI high (Hispanic), 
+v135_race_white,Injury Deaths (White),"Number of deaths due to injury per 100,000 population."
+v135_race_white_cilow,Injury Deaths CI low (White), 
+v135_race_white_cihigh,Injury Deaths CI high (White), 
+v135_race_nhopi,Injury Deaths (NHOPI),"Number of deaths due to injury per 100,000 population."
+v135_race_nhopi_cilow,Injury Deaths CI low (NHOPI), 
+v135_race_nhopi_cihigh,Injury Deaths CI high (NHOPI), 
+v125_rawvalue,"Air Pollution - Particulate Matter raw
+value",Average daily density of fine particulate matter in micrograms per cubic meter (PM2.5).
+v125_numerator,"Air Pollution - Particulate Matter
+numerator", 
+v125_denominator,"Air Pollution - Particulate Matter
+denominator", 
+v125_cilow,Air Pollution - Particulate Matter CI low, 
+v125_cihigh,Air Pollution - Particulate Matter CI high, 
+v124_rawvalue,Drinking Water Violations raw value,"Indicator of the presence of health-related drinking water violations. 0=No, 1=Yes"
+v124_numerator,Drinking Water Violations numerator, 
+v124_denominator,Drinking Water Violations denominator, 
+v124_cilow,Drinking Water Violations CI low, 
+v124_cihigh,Drinking Water Violations CI high, 
+v136_rawvalue,Severe Housing Problems raw value,"Percentage of households with at least 1 of 4 housing problems: overcrowding, high housing costs, lack of
+kitchen facilities, or lack of plumbing facilities."
+v136_numerator,Severe Housing Problems numerator, 
+v136_denominator,Severe Housing Problems denominator, 
+v136_cilow,Severe Housing Problems CI low, 
+v136_cihigh,Severe Housing Problems CI high, 
+v136_other_data_1,"Percentage of households with high
+housing costs","Percentage of households with severe cost burden > monthly housing costs (including utilities) exceed 50%
+of monthly income"
+v136_other_data_1_cilow,"Percentage of households with high
+housing costs CI low", 
+v136_other_data_1_cihigh,"Percentage of households with high
+housing costs CI high", 
+v136_other_data_2,"Percentage of households with
+overcrowding",Percentage of households with overcrowding > more than 1 person per room
+v136_other_data_2_cilow,"Percentage of households with
+overcrowding CI low", 
+v136_other_data_2_cihigh,"Percentage of households with
+overcrowding CI high", 
+v136_other_data_3,"Percentage of households with lack of
+kitchen or plumbing facilities",Percentage of households lacking complete plumbing or kitchen facilities
+v136_other_data_3_cilow,"Percentage of households with lack of
+kitchen or plumbing facilities CI low", 
+v136_other_data_3_cihigh,"Percentage of households with lack of
+kitchen or plumbing facilities CI high", 
+v067_rawvalue,Driving Alone to Work raw value,Percentage of the workforce that drives alone to work.
+v067_numerator,Driving Alone to Work numerator, 
+v067_denominator,Driving Alone to Work denominator, 
+v067_cilow,Driving Alone to Work CI low, 
+v067_cihigh,Driving Alone to Work CI high, 
+v067_race_aian,Driving Alone to Work (AIAN),Percentage of the workforce that drives alone to work.
+v067_race_aian_cilow,Driving Alone to Work CI low (AIAN), 
+v067_race_aian_cihigh,Driving Alone to Work CI high (AIAN), 
+v067_race_asian,"Driving Alone to Work (Asian/Pacific
+Islander)",Percentage of the workforce that drives alone to work.
+v067_race_asian_cilow,"Driving Alone to Work CI low
+(Asian/Pacific Islander)", 
+v067_race_asian_cihigh,"Driving Alone to Work CI high
+(Asian/Pacific Islander)", 
+v067_race_black,Driving Alone to Work (Black),Percentage of the workforce that drives alone to work.
+v067_race_black_cilow,Driving Alone to Work CI low (Black), 
+v067_race_black_cihigh,Driving Alone to Work CI high (Black), 
+v067_race_hispanic,Driving Alone to Work (Hispanic),Percentage of the workforce that drives alone to work.
+v067_race_hispanic_cilow,Driving Alone to Work CI low (Hispanic), 
+v067_race_hispanic_cihigh,"Driving Alone to Work CI high
+(Hispanic)", 
+v067_race_white,Driving Alone to Work (White),Percentage of the workforce that drives alone to work.
+v067_race_white_cilow,Driving Alone to Work CI low (White), 
+v067_race_white_cihigh,Driving Alone to Work CI high (White), 
+v137_rawvalue,"Long Commute - Driving Alone raw
+value","Among workers who commute in their car alone, the percentage that commute more than 30 minutes."
+v137_numerator,"Long Commute - Driving Alone
+numerator", 
+v137_denominator,"Long Commute - Driving Alone
+denominator", 
+v137_cilow,Long Commute - Driving Alone CI low, 
+v137_cihigh,Long Commute - Driving Alone CI high, 
+v147_rawvalue,Life Expectancy raw value,Average number of years a person can expect to live.
+v147_numerator,Life Expectancy numerator, 
+v147_denominator,Life Expectancy denominator, 
+v147_cilow,Life Expectancy CI low, 
+v147_cihigh,Life Expectancy CI high, 
+v147_race_aian,Life Expectancy (AIAN),Average number of years a person can expect to live.
+v147_race_aian_cilow,Life Expectancy CI low (AIAN), 
+v147_race_aian_cihigh,Life Expectancy CI high (AIAN), 
+v147_race_asian,Life Expectancy (Asian),Average number of years a person can expect to live.
+v147_race_asian_cilow,Life Expectancy CI low (Asian), 
+v147_race_asian_cihigh,Life Expectancy CI high (Asian), 
+v147_race_black,Life Expectancy (Black),Average number of years a person can expect to live.
+v147_race_black_cilow,Life Expectancy CI low (Black), 
+v147_race_black_cihigh,Life Expectancy CI high (Black), 
+v147_race_hispanic,Life Expectancy (Hispanic),Average number of years a person can expect to live.
+v147_race_hispanic_cilow,Life Expectancy CI low (Hispanic), 
+v147_race_hispanic_cihigh,Life Expectancy CI high (Hispanic), 
+v147_race_white,Life Expectancy (White),Average number of years a person can expect to live.
+v147_race_white_cilow,Life Expectancy CI low (White), 
+v147_race_white_cihigh,Life Expectancy CI high (White), 
+v147_race_nhopi,Life Expectancy (NHOPI),Average number of years a person can expect to live.
+v147_race_nhopi_cilow,Life Expectancy CI low (NHOPI), 
+v147_race_nhopi_cihigh,Life Expectancy CI high (NHOPI), 
+v127_rawvalue,"Premature Age-Adjusted Mortality raw
+value","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_numerator,"Premature Age-Adjusted Mortality
+numerator", 
+v127_denominator,"Premature Age-Adjusted Mortality
+denominator", 
+v127_cilow,"Premature Age-Adjusted Mortality CI
+low", 
+v127_cihigh,"Premature Age-Adjusted Mortality CI
+high", 
+v127_race_aian,"Premature Age-Adjusted Mortality
+(AIAN)","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_race_aian_cilow,"Premature Age-Adjusted Mortality CI
+low (AIAN)", 
+v127_race_aian_cihigh,"Premature Age-Adjusted Mortality CI
+high (AIAN)", 
+v127_race_asian,"Premature Age-Adjusted Mortality
+(Asian)","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_race_asian_cilow,"Premature Age-Adjusted Mortality CI
+low (Asian)", 
+v127_race_asian_cihigh,"Premature Age-Adjusted Mortality CI
+high (Asian)", 
+v127_race_black,"Premature Age-Adjusted Mortality
+(Black)","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_race_black_cilow,"Premature Age-Adjusted Mortality CI
+low (Black)", 
+v127_race_black_cihigh,"Premature Age-Adjusted Mortality CI
+high (Black)", 
+v127_race_hispanic,"Premature Age-Adjusted Mortality
+(Hispanic)","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_race_hispanic_cilow,"Premature Age-Adjusted Mortality CI
+low (Hispanic)", 
+v127_race_hispanic_cihigh,"Premature Age-Adjusted Mortality CI
+high (Hispanic)", 
+v127_race_white,"Premature Age-Adjusted Mortality
+(White)","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_race_white_cilow,"Premature Age-Adjusted Mortality CI
+low (White)", 
+v127_race_white_cihigh,"Premature Age-Adjusted Mortality CI
+high (White)", 
+v127_race_nhopi,"Premature Age-Adjusted Mortality
+(NHOPI)","Number of deaths among residents under age 75 per 100,000 population (age-adjusted)."
+v127_race_nhopi_cilow,"Premature Age-Adjusted Mortality CI
+low (NHOPI)", 
+v127_race_nhopi_cihigh,"Premature Age-Adjusted Mortality CI
+high (NHOPI)", 
+v128_rawvalue,Child Mortality raw value,"Number of deaths among residents under age 18 per 100,000 population."
+v128_numerator,Child Mortality numerator, 
+v128_denominator,Child Mortality denominator, 
+v128_cilow,Child Mortality CI low, 
+v128_cihigh,Child Mortality CI high, 
+v128_race_aian,Child Mortality (AIAN),"Number of deaths among residents under age 18 per 100,000 population."
+v128_race_aian_cilow,Child Mortality CI low (AIAN), 
+v128_race_aian_cihigh,Child Mortality CI high (AIAN), 
+v128_race_asian,Child Mortality (Asian),"Number of deaths among residents under age 18 per 100,000 population."
+v128_race_asian_cilow,Child Mortality CI low (Asian), 
+v128_race_asian_cihigh,Child Mortality CI high (Asian), 
+v128_race_black,Child Mortality (Black),"Number of deaths among residents under age 18 per 100,000 population."
+v128_race_black_cilow,Child Mortality CI low (Black), 
+v128_race_black_cihigh,Child Mortality CI high (Black), 
+v128_race_hispanic,Child Mortality (Hispanic),"Number of deaths among residents under age 18 per 100,000 population."
+v128_race_hispanic_cilow,Child Mortality CI low (Hispanic), 
+v128_race_hispanic_cihigh,Child Mortality CI high (Hispanic), 
+v128_race_white,Child Mortality (White),"Number of deaths among residents under age 18 per 100,000 population."
+v128_race_white_cilow,Child Mortality CI low (White), 
+v128_race_white_cihigh,Child Mortality CI high (White), 
+v128_race_nhopi,Child Mortality (NHOPI),"Number of deaths among residents under age 18 per 100,000 population."
+v128_race_nhopi_cilow,Child Mortality CI low (NHOPI), 
+v128_race_nhopi_cihigh,Child Mortality CI high (NHOPI), 
+v129_rawvalue,Infant Mortality raw value,"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_numerator,Infant Mortality numerator, 
+v129_denominator,Infant Mortality denominator, 
+v129_cilow,Infant Mortality CI low, 
+v129_cihigh,Infant Mortality CI high, 
+v129_race_aian,Infant Mortality (AIAN),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_aian_cilow,Infant Mortality CI low (AIAN), 
+v129_race_aian_cihigh,Infant Mortality CI high (AIAN), 
+v129_race_asian,Infant Mortality (Asian),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_asian_cilow,Infant Mortality CI low (Asian), 
+v129_race_asian_cihigh,Infant Mortality CI high (Asian), 
+v129_race_black,Infant Mortality (Black),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_black_cilow,Infant Mortality CI low (Black), 
+v129_race_black_cihigh,Infant Mortality CI high (Black), 
+v129_race_hispanic,Infant Mortality (Hispanic),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_hispanic_cilow,Infant Mortality CI low (Hispanic), 
+v129_race_hispanic_cihigh,Infant Mortality CI high (Hispanic), 
+v129_race_white,Infant Mortality (White),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_white_cilow,Infant Mortality CI low (White), 
+v129_race_white_cihigh,Infant Mortality CI high (White), 
+v129_race_nhopi,Infant Mortality (NHOPI),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_nhopi_cilow,Infant Mortality CI low (NHOPI), 
+v129_race_nhopi_cihigh,Infant Mortality CI high (NHOPI), 
+v129_race_tom,Infant Mortality (Two or more races),"Number of infant deaths (within 1 year) per 1,000 live births."
+v129_race_tom_cilow,"Infant Mortality CI low (Two or more
+races)", 
+v129_race_tom_cihigh,"Infant Mortality CI high (Two or more
+races)", 
+v144_rawvalue,Frequent Physical Distress raw value,Percentage of adults reporting 14 or more days of poor physical health per month (age-adjusted).
+v144_numerator,Frequent Physical Distress numerator, 
+v144_denominator,"Frequent Physical Distress
+denominator", 
+v144_cilow,Frequent Physical Distress CI low, 
+v144_cihigh,Frequent Physical Distress CI high, 
+v145_rawvalue,Frequent Mental Distress raw value,Percentage of adults reporting 14 or more days of poor mental health per month (age-adjusted).
+v145_numerator,Frequent Mental Distress numerator, 
+v145_denominator,Frequent Mental Distress denominator, 
+v145_cilow,Frequent Mental Distress CI low, 
+v145_cihigh,Frequent Mental Distress CI high, 
+v060_rawvalue,Diabetes Prevalence raw value,Percentage of adults aged 20 and above with diagnosed diabetes (age-adjusted).
+v060_numerator,Diabetes Prevalence numerator, 
+v060_denominator,Diabetes Prevalence denominator, 
+v060_cilow,Diabetes Prevalence CI low, 
+v060_cihigh,Diabetes Prevalence CI high, 
+v061_rawvalue,HIV Prevalence raw value,"Number of people aged 13 years and older living with a diagnosis of human immunodeficiency virus (HIV)
+infection per 100,000 population."
+v061_numerator,HIV Prevalence numerator, 
+v061_denominator,HIV Prevalence denominator, 
+v061_cilow,HIV Prevalence CI low, 
+v061_cihigh,HIV Prevalence CI high, 
+v139_rawvalue,Food Insecurity raw value,Percentage of population who lack adequate access to food.
+v139_numerator,Food Insecurity numerator, 
+v139_denominator,Food Insecurity denominator, 
+v139_cilow,Food Insecurity CI low, 
+v139_cihigh,Food Insecurity CI high, 
+v083_rawvalue,"Limited Access to Healthy Foods raw
+value",Percentage of population who are low-income and do not live close to a grocery store.
+v083_numerator,"Limited Access to Healthy Foods
+numerator", 
+v083_denominator,"Limited Access to Healthy Foods
+denominator", 
+v083_cilow,"Limited Access to Healthy Foods CI
+low", 
+v083_cihigh,"Limited Access to Healthy Foods CI
+high", 
+v138_rawvalue,Drug Overdose Deaths raw value,"Number of drug poisoning deaths per 100,000 population."
+v138_numerator,Drug Overdose Deaths numerator, 
+v138_denominator,Drug Overdose Deaths denominator, 
+v138_cilow,Drug Overdose Deaths CI low, 
+v138_cihigh,Drug Overdose Deaths CI high, 
+v138_race_aian,Drug Overdose Deaths (AIAN),"Number of drug poisoning deaths per 100,000 population."
+v138_race_aian_cilow,Drug Overdose Deaths CI low (AIAN), 
+v138_race_aian_cihigh,Drug Overdose Deaths CI high (AIAN), 
+v138_race_asian,Drug Overdose Deaths (Asian),"Number of drug poisoning deaths per 100,000 population."
+v138_race_asian_cilow,Drug Overdose Deaths CI low (Asian), 
+v138_race_asian_cihigh,Drug Overdose Deaths CI high (Asian), 
+v138_race_black,Drug Overdose Deaths (Black),"Number of drug poisoning deaths per 100,000 population."
+v138_race_black_cilow,Drug Overdose Deaths CI low (Black), 
+v138_race_black_cihigh,Drug Overdose Deaths CI high (Black), 
+v138_race_hispanic,Drug Overdose Deaths (Hispanic),"Number of drug poisoning deaths per 100,000 population."
+v138_race_hispanic_cilow,"Drug Overdose Deaths CI low
+(Hispanic)", 
+v138_race_hispanic_cihigh,"Drug Overdose Deaths CI high
+(Hispanic)", 
+v138_race_white,Drug Overdose Deaths (White),"Number of drug poisoning deaths per 100,000 population."
+v138_race_white_cilow,Drug Overdose Deaths CI low (White), 
+v138_race_white_cihigh,Drug Overdose Deaths CI high (White), 
+v138_race_nhopi,Drug Overdose Deaths (NHOPI),"Number of drug poisoning deaths per 100,000 population."
+v138_race_nhopi_cilow,Drug Overdose Deaths CI low (NHOPI), 
+v138_race_nhopi_cihigh,"Drug Overdose Deaths CI high
+(NHOPI)", 
+v143_rawvalue,Insufficient Sleep raw value,Percentage of adults who report fewer than 7 hours of sleep on average (age-adjusted).
+v143_numerator,Insufficient Sleep numerator, 
+v143_denominator,Insufficient Sleep denominator, 
+v143_cilow,Insufficient Sleep CI low, 
+v143_cihigh,Insufficient Sleep CI high, 
+v003_rawvalue,Uninsured Adults raw value,Percentage of adults under age 65 without health insurance.
+v003_numerator,Uninsured Adults numerator, 
+v003_denominator,Uninsured Adults denominator, 
+v003_cilow,Uninsured Adults CI low, 
+v003_cihigh,Uninsured Adults CI high, 
+v122_rawvalue,Uninsured Children raw value,Percentage of children under age 19 without health insurance.
+v122_numerator,Uninsured Children numerator, 
+v122_denominator,Uninsured Children denominator, 
+v122_cilow,Uninsured Children CI low, 
+v122_cihigh,Uninsured Children CI high, 
+v131_rawvalue,"Other Primary Care Providers raw
+value","Number of other primary care providers per 100,000 population"
+v131_numerator,"Other Primary Care Providers
+numerator", 
+v131_denominator,"Other Primary Care Providers
+denominator", 
+v131_cilow,Other Primary Care Providers CI low, 
+v131_cihigh,Other Primary Care Providers CI high, 
+v131_other_data_1,"Ratio of population to primary care
+providers other than physicians.",Ratio of population to primary care providers other than physicians.
+v021_rawvalue,High School Graduation raw value,Percentage of ninth-grade cohort that graduates in four years.
+v021_numerator,High School Graduation numerator, 
+v021_denominator,High School Graduation denominator, 
+v021_cilow,High School Graduation CI low, 
+v021_cihigh,High School Graduation CI high, 
+v149_rawvalue,Disconnected Youth raw value,Percentage of teens and young adults ages 16-19 who are neither working nor in school.
+v149_numerator,Disconnected Youth numerator, 
+v149_denominator,Disconnected Youth denominator, 
+v149_cilow,Disconnected Youth CI low, 
+v149_cihigh,Disconnected Youth CI high, 
+v159_rawvalue,Reading Scores raw value,Average grade level performance for 3rd graders on English Language Arts standardized tests.
+v159_numerator,Reading Scores numerator, 
+v159_denominator,Reading Scores denominator, 
+v159_cilow,Reading Scores CI low, 
+v159_cihigh,Reading Scores CI high, 
+v159_race_aian,Reading Scores (AIAN),Average grade level performance for 3rd graders on English Language Arts standardized tests.
+v159_race_asian,"Reading Scores (Asian/Pacific
+Islander)",Average grade level performance for 3rd graders on English Language Arts standardized tests.
+v159_race_black,Reading Scores (Black),Average grade level performance for 3rd graders on English Language Arts standardized tests.
+v159_race_hispanic,Reading Scores (Hispanic),Average grade level performance for 3rd graders on English Language Arts standardized tests.
+v159_race_white,Reading Scores (White),Average grade level performance for 3rd graders on English Language Arts standardized tests.
+v160_rawvalue,Math Scores raw value,Average grade level performance for 3rd graders on math standardized tests.
+v160_numerator,Math Scores numerator, 
+v160_denominator,Math Scores denominator, 
+v160_cilow,Math Scores CI low, 
+v160_cihigh,Math Scores CI high, 
+v160_race_aian,Math Scores (AIAN),Average grade level performance for 3rd graders on math standardized tests.
+v160_race_asian,Math Scores (Asian/Pacific Islander),Average grade level performance for 3rd graders on math standardized tests.
+v160_race_black,Math Scores (Black),Average grade level performance for 3rd graders on math standardized tests.
+v160_race_hispanic,Math Scores (Hispanic),Average grade level performance for 3rd graders on math standardized tests.
+v160_race_white,Math Scores (White),Average grade level performance for 3rd graders on math standardized tests.
+v167_rawvalue,School Segregation raw value,"The extent to which students within different race and ethnicity groups are unevenly distributed across
+schools when compared with the racial and ethnic composition of the local population. The index ranges
+from 0 to 1 with lower values representing a school composition that approximates race and ethnicity
+distributions in the student populations within the county, and higher values representing more segregation."
+v167_numerator,School Segregation numerator, 
+v167_denominator,School Segregation denominator, 
+v167_cilow,School Segregation CI low, 
+v167_cihigh,School Segregation CI high, 
+v169_rawvalue,School Funding Adequacy raw value,"The average gap in dollars between actual and required spending per pupil among public school districts.
+Required spending is an estimate of dollars needed to achieve U.S. average test scores in each district."
+v169_numerator,School Funding Adequacy numerator, 
+v169_denominator,School Funding Adequacy denominator, 
+v169_cilow,School Funding Adequacy CI low, 
+v169_cihigh,School Funding Adequacy CI high, 
+v151_rawvalue,Gender Pay Gap raw value,"Ratio of women's median earnings to men's median earnings for all full-time, year-round workers, presented
+as &quot;cents on the dollar.&quot;"
+v151_numerator,Gender Pay Gap numerator, 
+v151_denominator,Gender Pay Gap denominator, 
+v151_cilow,Gender Pay Gap CI low, 
+v151_cihigh,Gender Pay Gap CI high, 
+v063_rawvalue,Median Household Income raw value,The income where half of households in a county earn more and half of households earn less.
+v063_numerator,Median Household Income numerator, 
+v063_denominator,"Median Household Income
+denominator", 
+v063_cilow,Median Household Income CI low, 
+v063_cihigh,Median Household Income CI high, 
+v063_race_aian,Median Household Income (AIAN),The income where half of households in a county earn more and half of households earn less.
+v063_race_aian_cilow,"Median Household Income CI low
+(AIAN)", 
+v063_race_aian_cihigh,"Median Household Income CI high
+(AIAN)", 
+v063_race_asian,Median household income (Asian),The income where half of households in a county earn more and half of households earn less.
+v063_race_asian_cilow,"Median household income CI low
+(Asian)", 
+v063_race_asian_cihigh,"Median household income CI high
+(Asian)", 
+v063_race_black,Median Household Income (Black),The income where half of households in a county earn more and half of households earn less.
+v063_race_black_cilow,"Median Household Income CI low
+(Black)", 
+v063_race_black_cihigh,"Median Household Income CI high
+(Black)", 
+v063_race_hispanic,Median Household Income (Hispanic),The income where half of households in a county earn more and half of households earn less.
+v063_race_hispanic_cilow,"Median Household Income CI low
+(Hispanic)", 
+v063_race_hispanic_cihigh,"Median Household Income CI high
+(Hispanic)", 
+v063_race_white,Median Household Income (White),The income where half of households in a county earn more and half of households earn less.
+v063_race_white_cilow,"Median Household Income CI low
+(White)", 
+v063_race_white_cihigh,"Median Household Income CI high
+(White)", 
+v170_rawvalue,Living Wage raw value,"The hourly wage needed to cover basic household expenses plus all relevant taxes for a household of one
+adult and two children."
+v170_numerator,Living Wage numerator, 
+v170_denominator,Living Wage denominator, 
+v170_cilow,Living Wage CI low, 
+v170_cihigh,Living Wage CI high, 
+v065_rawvalue,"Children Eligible for Free or Reduced
+Price Lunch raw value",Percentage of children enrolled in public schools that are eligible for free or reduced price lunch.
+v065_numerator,"Children Eligible for Free or Reduced
+Price Lunch numerator", 
+v065_denominator,"Children Eligible for Free or Reduced
+Price Lunch denominator", 
+v065_cilow,"Children Eligible for Free or Reduced
+Price Lunch CI low", 
+v065_cihigh,"Children Eligible for Free or Reduced
+Price Lunch CI high", 
+v141_rawvalue,"Residential Segregation - Black/White
+raw value","Index of dissimilarity where higher values indicate greater residential segregation between Black and white
+county residents."
+v141_numerator,"Residential Segregation - Black/White
+numerator", 
+v141_denominator,"Residential Segregation - Black/White
+denominator", 
+v141_cilow,"Residential Segregation - Black/White
+CI low", 
+v141_cihigh,"Residential Segregation - Black/White
+CI high", 
+v171_rawvalue,Child Care Cost Burden raw value,Child care costs for a household with two children as a percent of median household income.
+v171_numerator,Child Care Cost Burden numerator, 
+v171_denominator,Child Care Cost Burden denominator, 
+v171_cilow,Child Care Cost Burden CI low, 
+v171_cihigh,Child Care Cost Burden CI high, 
+v172_rawvalue,Child Care Centers raw value,"Number of child care centers per 1,000 population under 5 years old."
+v172_numerator,Child Care Centers numerator, 
+v172_denominator,Child Care Centers denominator, 
+v172_cilow,Child Care Centers CI low, 
+v172_cihigh,Child Care Centers CI high, 
+v015_rawvalue,Homicides raw value,"Number of deaths due to homicide per 100,000 population."
+v015_numerator,Homicides numerator, 
+v015_denominator,Homicides denominator, 
+v015_cilow,Homicides CI low, 
+v015_cihigh,Homicides CI high, 
+v015_race_aian,Homicides (AIAN),"Number of deaths due to homicide per 100,000 population."
+v015_race_aian_cilow,Homicides CI low (AIAN), 
+v015_race_aian_cihigh,Homicides CI high (AIAN), 
+v015_race_asian,Homicides (Asian),"Number of deaths due to homicide per 100,000 population."
+v015_race_asian_cilow,Homicides CI low (Asian), 
+v015_race_asian_cihigh,Homicides CI high (Asian), 
+v015_race_black,Homicides (Black),"Number of deaths due to homicide per 100,000 population."
+v015_race_black_cilow,Homicides CI low (Black), 
+v015_race_black_cihigh,Homicides CI high (Black), 
+v015_race_hispanic,Homicides (Hispanic),"Number of deaths due to homicide per 100,000 population."
+v015_race_hispanic_cilow,Homicides CI low (Hispanic), 
+v015_race_hispanic_cihigh,Homicides CI high (Hispanic), 
+v015_race_white,Homicides (White),"Number of deaths due to homicide per 100,000 population."
+v015_race_white_cilow,Homicides CI low (White), 
+v015_race_white_cihigh,Homicides CI high (White), 
+v015_race_nhopi,Homicides (NHOPI),"Number of deaths due to homicide per 100,000 population."
+v015_race_nhopi_cilow,Homicides CI low (NHOPI), 
+v015_race_nhopi_cihigh,Homicides CI high (NHOPI), 
+v161_rawvalue,Suicides raw value,"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_numerator,Suicides numerator, 
+v161_denominator,Suicides denominator, 
+v161_cilow,Suicides CI low, 
+v161_cihigh,Suicides CI high, 
+v161_other_data_1,Crude suicide rate,"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_aian,Suicides (AIAN),"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_aian_cilow,Suicides CI low (AIAN), 
+v161_race_aian_cihigh,Suicides CI high (AIAN), 
+v161_race_asian,Suicides (Asian),"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_asian_cilow,Suicides CI low (Asian), 
+v161_race_asian_cihigh,Suicides CI high (Asian), 
+v161_race_black,Suicides (Black),"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_black_cilow,Suicides CI low (Black), 
+v161_race_black_cihigh,Suicides CI high (Black), 
+v161_race_hispanic,Suicides (Hispanic),"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_hispanic_cilow,Suicides CI low (Hispanic), 
+v161_race_hispanic_cihigh,Suicides CI high (Hispanic), 
+v161_race_white,Suicides (White),"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_white_cilow,Suicides CI low (White), 
+v161_race_white_cihigh,Suicides CI high (White), 
+v161_race_nhopi,Suicides (NHOPI),"Number of deaths due to suicide per 100,000 population (age-adjusted)."
+v161_race_nhopi_cilow,Suicides CI low (NHOPI), 
+v161_race_nhopi_cihigh,Suicides CI high (NHOPI), 
+v148_rawvalue,Firearm Fatalities raw value,"Number of deaths due to firearms per 100,000 population."
+v148_numerator,Firearm Fatalities numerator, 
+v148_denominator,Firearm Fatalities denominator, 
+v148_cilow,Firearm Fatalities CI low, 
+v148_cihigh,Firearm Fatalities CI high, 
+v148_race_aian,Firearm Fatalities (AIAN),"Number of deaths due to firearms per 100,000 population."
+v148_race_aian_cilow,Firearm Fatalities CI low (AIAN), 
+v148_race_aian_cihigh,Firearm Fatalities CI high (AIAN), 
+v148_race_asian,Firearm Fatalities (Asian),"Number of deaths due to firearms per 100,000 population."
+v148_race_asian_cilow,Firearm Fatalities CI low (Asian), 
+v148_race_asian_cihigh,Firearm Fatalities CI high (Asian), 
+v148_race_black,Firearm Fatalities (Black),"Number of deaths due to firearms per 100,000 population."
+v148_race_black_cilow,Firearm Fatalities CI low (Black), 
+v148_race_black_cihigh,Firearm Fatalities CI high (Black), 
+v148_race_hispanic,Firearm Fatalities (Hispanic),"Number of deaths due to firearms per 100,000 population."
+v148_race_hispanic_cilow,Firearm Fatalities CI low (Hispanic), 
+v148_race_hispanic_cihigh,Firearm Fatalities CI high (Hispanic), 
+v148_race_white,Firearm Fatalities (White),"Number of deaths due to firearms per 100,000 population."
+v148_race_white_cilow,Firearm Fatalities CI low (White), 
+v148_race_white_cihigh,Firearm Fatalities CI high (White), 
+v148_race_nhopi,Firearm Fatalities (NHOPI),"Number of deaths due to firearms per 100,000 population."
+v148_race_nhopi_cilow,Firearm Fatalities CI low (NHOPI), 
+v148_race_nhopi_cihigh,Firearm Fatalities CI high (NHOPI), 
+v039_rawvalue,Motor Vehicle Crash Deaths raw value,"Number of motor vehicle crash deaths per 100,000 population."
+v039_numerator,Motor Vehicle Crash Deaths numerator, 
+v039_denominator,"Motor Vehicle Crash Deaths
+denominator", 
+v039_cilow,Motor Vehicle Crash Deaths CI low, 
+v039_cihigh,Motor Vehicle Crash Deaths CI high, 
+v039_race_aian,Motor Vehicle Crash Deaths (AIAN),"Number of motor vehicle crash deaths per 100,000 population."
+v039_race_aian_cilow,"Motor Vehicle Crash Deaths CI low
+(AIAN)", 
+v039_race_aian_cihigh,"Motor Vehicle Crash Deaths CI high
+(AIAN)", 
+v039_race_asian,Motor Vehicle Crash Deaths (Asian),"Number of motor vehicle crash deaths per 100,000 population."
+v039_race_asian_cilow,"Motor Vehicle Crash Deaths CI low
+(Asian)", 
+v039_race_asian_cihigh,"Motor Vehicle Crash Deaths CI high
+(Asian)", 
+v039_race_black,Motor Vehicle Crash Deaths (Black),"Number of motor vehicle crash deaths per 100,000 population."
+v039_race_black_cilow,"Motor Vehicle Crash Deaths CI low
+(Black)", 
+v039_race_black_cihigh,"Motor Vehicle Crash Deaths CI high
+(Black)", 
+v039_race_hispanic,Motor Vehicle Crash Deaths (Hispanic),"Number of motor vehicle crash deaths per 100,000 population."
+v039_race_hispanic_cilow,"Motor Vehicle Crash Deaths CI low
+(Hispanic)", 
+v039_race_hispanic_cihigh,"Motor Vehicle Crash Deaths CI high
+(Hispanic)", 
+v039_race_white,Motor Vehicle Crash Deaths (White),"Number of motor vehicle crash deaths per 100,000 population."
+v039_race_white_cilow,"Motor Vehicle Crash Deaths CI low
+(White)", 
+v039_race_white_cihigh,"Motor Vehicle Crash Deaths CI high
+(White)", 
+v039_race_nhopi,Motor Vehicle Crash Deaths (NHOPI),"Number of motor vehicle crash deaths per 100,000 population."
+v039_race_nhopi_cilow,"Motor Vehicle Crash Deaths CI low
+(NHOPI)", 
+v039_race_nhopi_cihigh,"Motor Vehicle Crash Deaths CI high
+(NHOPI)", 
+v158_rawvalue,Juvenile Arrests raw value,"Rate of delinquency cases per 1,000 juveniles."
+v158_numerator,Juvenile Arrests numerator, 
+v158_denominator,Juvenile Arrests denominator, 
+v158_cilow,Juvenile Arrests CI low, 
+v158_cihigh,Juvenile Arrests CI high, 
+v158_other_data_1,"Number of juvenile delinquency cases
+formally processed by a juvenile court","Rate of delinquency cases per 1,000 juveniles."
+v158_other_data_2,"Number of informally handled juvenile
+delinquency cases","Rate of delinquency cases per 1,000 juveniles."
+v177_rawvalue,Voter Turnout raw value,Percentage of citizen population aged 18 or older who voted in the 2020 U.S. Presidential election.
+v177_numerator,Voter Turnout numerator, 
+v177_denominator,Voter Turnout denominator, 
+v177_cilow,Voter Turnout CI low, 
+v177_cihigh,Voter Turnout CI high, 
+v178_rawvalue,Census Participation raw value,"Percentage of all households that self-responded to the 2020 census (by internet, paper questionnaire or
+telephone)."
+v178_numerator,Census Participation numerator, 
+v178_denominator,Census Participation denominator, 
+v178_cilow,Census Participation CI low, 
+v178_cihigh,Census Participation CI high, 
+v156_rawvalue,Traffic Volume raw value,Average traffic volume per meter of major roadways in the county.
+v156_numerator,Traffic Volume numerator, 
+v156_denominator,Traffic Volume denominator, 
+v156_cilow,Traffic Volume CI low, 
+v156_cihigh,Traffic Volume CI high, 
+v153_rawvalue,Homeownership raw value,Percentage of owner-occupied housing units.
+v153_numerator,Homeownership numerator, 
+v153_denominator,Homeownership denominator, 
+v153_cilow,Homeownership CI low, 
+v153_cihigh,Homeownership CI high, 
+v154_rawvalue,Severe Housing Cost Burden raw value,Percentage of households that spend 50% or more of their household income on housing.
+v154_numerator,"Severe Housing Cost Burden
+numerator", 
+v154_denominator,"Severe Housing Cost Burden
+denominator", 
+v154_cilow,Severe Housing Cost Burden CI low, 
+v154_cihigh,Severe Housing Cost Burden CI high, 
+v166_rawvalue,Broadband Access raw value,Percentage of households with broadband internet connection.
+v166_numerator,Broadband Access numerator, 
+v166_denominator,Broadband Access denominator, 
+v166_cilow,Broadband Access CI low, 
+v166_cihigh,Broadband Access CI high, 
+v051_rawvalue,Population raw value,Resident population.
+v051_numerator,Population numerator, 
+v051_denominator,Population denominator, 
+v051_cilow,Population CI low, 
+v051_cihigh,Population CI high, 
+v052_rawvalue,% Below 18 Years of Age raw value,Percentage of population below 18 years of age.
+v052_numerator,% Below 18 Years of Age numerator, 
+v052_denominator,% Below 18 Years of Age denominator, 
+v052_cilow,% Below 18 Years of Age CI low, 
+v052_cihigh,% Below 18 Years of Age CI high, 
+v053_rawvalue,% 65 and Older raw value,Percentage of population ages 65 and older.
+v053_numerator,% 65 and Older numerator, 
+v053_denominator,% 65 and Older denominator, 
+v053_cilow,% 65 and Older CI low, 
+v053_cihigh,% 65 and Older CI high, 
+v054_rawvalue,% Non-Hispanic Black raw value,Percentage of population self-identifying as non-Hispanic Black or African American.
+v054_numerator,% Non-Hispanic Black numerator, 
+v054_denominator,% Non-Hispanic Black denominator, 
+v054_cilow,% Non-Hispanic Black CI low, 
+v054_cihigh,% Non-Hispanic Black CI high, 
+v055_rawvalue,"% American Indian or Alaska Native
+raw value",Percentage of population self-identifying as American Indian or Alaska Native.
+v055_numerator,"% American Indian or Alaska Native
+numerator", 
+v055_denominator,"% American Indian or Alaska Native
+denominator", 
+v055_cilow,"% American Indian or Alaska Native CI
+low", 
+v055_cihigh,"% American Indian or Alaska Native CI
+high", 
+v081_rawvalue,% Asian raw value,Percentage of population self-identifying as Asian.
+v081_numerator,% Asian numerator, 
+v081_denominator,% Asian denominator, 
+v081_cilow,% Asian CI low, 
+v081_cihigh,% Asian CI high, 
+v080_rawvalue,"% Native Hawaiian or Other Pacific
+Islander raw value",Percentage of population self-identifying as Native Hawaiian or Other Pacific Islander.
+v080_numerator,"% Native Hawaiian or Other Pacific
+Islander numerator", 
+v080_denominator,"% Native Hawaiian or Other Pacific
+Islander denominator", 
+v080_cilow,"% Native Hawaiian or Other Pacific
+Islander CI low", 
+v080_cihigh,"% Native Hawaiian or Other Pacific
+Islander CI high", 
+v056_rawvalue,% Hispanic raw value,Percentage of population self-identifying as Hispanic.
+v056_numerator,% Hispanic numerator, 
+v056_denominator,% Hispanic denominator, 
+v056_cilow,% Hispanic CI low, 
+v056_cihigh,% Hispanic CI high, 
+v126_rawvalue,% Non-Hispanic White raw value,Percentage of population self-identifying as non-Hispanic white.
+v126_numerator,% Non-Hispanic White numerator, 
+v126_denominator,% Non-Hispanic White denominator, 
+v126_cilow,% Non-Hispanic White CI low, 
+v126_cihigh,% Non-Hispanic White CI high, 
+v059_rawvalue,% Not Proficient in English raw value,Percentage of population aged 5 and over who reported speaking English less than â€œwell.&quot;
+v059_numerator,% Not Proficient in English numerator, 
+v059_denominator,"% Not Proficient in English
+denominator", 
+v059_cilow,% Not Proficient in English CI low, 
+v059_cihigh,% Not Proficient in English CI high, 
+v057_rawvalue,% Female raw value,Percentage of population that is female.
+v057_numerator,% Female numerator, 
+v057_denominator,% Female denominator, 
+v057_cilow,% Female CI low, 
+v057_cihigh,% Female CI high, 
+v058_rawvalue,% Rural raw value,Percentage of population living in a census-defined rural area.
+v058_numerator,% Rural numerator, 
+v058_denominator,% Rural denominator, 
+v058_cilow,% Rural CI low, 
+v058_cihigh,% Rural CI high, 
