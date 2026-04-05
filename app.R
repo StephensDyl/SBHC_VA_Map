@@ -163,33 +163,35 @@ server <- function(input, output, session) {
     pal   <- colorNumeric("viridis", domain = vals, na.color = "#cccccc")
     label <- names(fill_choices)[fill_choices == var]
 
-    popup_html <- paste0(
-      "<b>", va_counties_sf$county, "</b><br>",
-      "<b>Total Schools:</b> ",                    va_counties_sf$total_schools, "<br>",
-      "<b>Schools Near an SBHC:</b> ",             va_counties_sf$schools_w_sbhc, "<br>",
-      "<b>Avg Travel Time – General Hospital:</b> ",            round(va_counties_sf$avg_tt_general,           1), " min<br>",
-      "<b>Avg Travel Time – Children's General Hospital:</b> ", round(va_counties_sf$avg_tt_childrens_general, 1), " min<br>",
-      "<b>Avg Travel Time – Psychiatric Hospital:</b> ",        round(va_counties_sf$avg_tt_psychiatric,       1), " min<br>",
-      "<b>", label, ":</b> ",                      round(vals, 2)
-    )
+    # Attach fill values directly to the sf object so formula-based
+    # evaluation in addPolygons works correctly row-by-row
+    va_counties_sf$fill_val <- vals
 
     leafletProxy("map") |>
       clearGroup("Counties") |>
       addPolygons(
         data        = va_counties_sf,
         group       = "Counties",
-        fillColor   = pal(vals),
+        fillColor   = ~pal(fill_val),
         fillOpacity = 0.5,
         color       = "white",
         weight      = 1,
         options     = pathOptions(pane = "county_pane"),
         label       = ~county,
-        popup       = popup_html,
+        popup       = ~paste0(
+          "<b>", county, "</b><br>",
+          "<b>Total Schools:</b> ", total_schools, "<br>",
+          "<b>Schools Near an SBHC:</b> ", schools_w_sbhc, "<br>",
+          "<b>Avg Travel Time \u2013 General Hospital:</b> ",            round(avg_tt_general,           1), " min<br>",
+          "<b>Avg Travel Time \u2013 Children's General Hospital:</b> ", round(avg_tt_childrens_general, 1), " min<br>",
+          "<b>Avg Travel Time \u2013 Psychiatric Hospital:</b> ",        round(avg_tt_psychiatric,       1), " min<br>",
+          "<b>", label, ":</b> ", round(fill_val, 2)
+        ),
         highlightOptions = highlightOptions(
           color       = "#333333",
           weight      = 2.5,
           fillOpacity = 0.8,
-          sendToBack = TRUE
+          sendToBack  = TRUE
         )
       ) |>
       removeControl("county_legend") |>

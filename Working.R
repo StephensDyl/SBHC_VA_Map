@@ -58,15 +58,6 @@ reactable(
   )
 )
 
-# Run this block once to generate RDS files needed by app.R
-# (saves the geocoded + processed objects so the app doesn't re-geocode on startup)
-if (F) {
-  saveRDS(df_normed,      "df_normed.rds")
-  saveRDS(schools_final,  "schools_final.rds")
-  saveRDS(sbhc_map,       "sbhc_map.rds")
-  saveRDS(FQHC_sf,        "FQHC_sf.rds")
-  saveRDS(va_counties_sf, "va_counties_sf.rds")
-}
 
 read.csv("SBHC VA.csv")->SBHC
 
@@ -362,3 +353,12 @@ va_enriched %>%
   write.csv("va_enriched.csv")
 
 
+# Run this block once to generate RDS files needed by app.R
+# (saves the geocoded + processed objects so the app doesn't re-geocode on startup)
+if (F) {
+  saveRDS(df_normed,      "df_normed.rds")
+  saveRDS(schools_final,  "schools_final.rds")
+  saveRDS(sbhc_map,       "sbhc_map.rds")
+  saveRDS(FQHC_sf,        "FQHC_sf.rds")
+  saveRDS(va_counties_sf, "va_counties_sf.rds")
+}
